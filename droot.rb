@@ -1,13 +1,13 @@
 class Droot < Formula
   homepage 'https://github.com/yuuki1/droot'
-  version '0.0.1'
+  version '0.2.0'
 
   if Hardware.is_64_bit?
-    url 'https://github.com/yuuki1/droot/releases/download/v0.1.0/droot_darwin_amd64.zip'
-    sha256 '2b7dbc0c5349e1e062661688ce8e4f23548ad2f501c9f6f1a16edfbbe9c507f3'
+    url 'https://github.com/yuuki1/droot/releases/download/v0.2.0/droot_darwin_amd64.zip'
+    sha256 'f6f8e5f977b476b311a5944b044f469ad78206efe50fcd7dd5ab9b3f87c2c262'
   else
-    url 'https://github.com/itchyny/rexdep/releases/download/v0.0.3/rexdep_darwin_386.zip'
-    sha256 'df433de715d69b3de1afdbd7122c056eab4cf99909a3935af87a432e82af8b38'
+    url 'https://github.com/yuuki1/droot/releases/download/v0.2.0/droot_darwin_386.zip'
+    sha256 'b20620178c0a7c292ff1a6b11f400d024acf21119b9c3670373027c64901ceff'
   end
 
   head do
