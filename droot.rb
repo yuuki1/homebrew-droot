@@ -4,10 +4,10 @@ class Droot < Formula
 
   if Hardware.is_64_bit?
     url 'https://github.com/yuuki1/droot/releases/download/v0.2.0/droot_darwin_amd64.zip'
-    sha256 'f6f8e5f977b476b311a5944b044f469ad78206efe50fcd7dd5ab9b3f87c2c262'
+    sha256 '9fede02c6c4e7246c72fbc2979d64cbeee1d18ecfe4d3826a3e9856c33de4e49'
   else
     url 'https://github.com/yuuki1/droot/releases/download/v0.2.0/droot_darwin_386.zip'
-    sha256 'b20620178c0a7c292ff1a6b11f400d024acf21119b9c3670373027c64901ceff'
+    sha256 '66fc9b89197b89e1de8af843fcf67bbcb142fd16a75eb582ad34a200c9835168'
   end
 
   head do
