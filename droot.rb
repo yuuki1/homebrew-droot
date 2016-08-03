@@ -3,7 +3,7 @@ class Droot < Formula
   homepage 'https://github.com/yuuki/droot'
   version droot_version
 
-  if Hardware.is_64_bit?
+  if (defined?(Hardware::CPU) && Hardware::CPU.respond_to?(:is_64_bit?)) ? Hardware::CPU.is_64_bit? : Hardware.is_64_bit?
     url "https://github.com/yuuki/droot/releases/download/v#{droot_version}/droot_darwin_amd64.zip"
     sha256 'ce15eb866d08f4d926ff9daddf4432e9bfaff722409e94228cea7dbdf700dced'
   else
