@@ -1,15 +1,11 @@
 class Droot < Formula
-  droot_version = '0.6.2'
+  droot_version = '0.7.2'
   homepage 'https://github.com/yuuki/droot'
   version droot_version
 
-  if Hardware::CPU.is_64_bit?
-    url "https://github.com/yuuki/droot/releases/download/v#{droot_version}/droot_darwin_amd64.zip"
-    sha256 'ce15eb866d08f4d926ff9daddf4432e9bfaff722409e94228cea7dbdf700dced'
-  else
-    url "https://github.com/yuuki/droot/releases/download/v#{droot_version}/droot_darwin_386.zip"
-    sha256 '9d6792922477681225680b8f00e3f33504cb4f69f86f8b65146f83d566ab5871'
-  end
+  # support only amd64
+  url "https://github.com/yuuki/droot/releases/download/v#{droot_version}/droot_darwin_amd64.zip"
+  sha256 '42a0b956b7a02bd41eb795f5d9ff00d97710c276d721cb18dc1e927981afb3c3'
 
   head do
     url 'https://github.com/yuuki/droot.git'
